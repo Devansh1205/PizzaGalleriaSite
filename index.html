@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizza Galleria</title>
+</head>
+
+<body>
+    <header class="navbar">
+            <nav>
+                <ul>
+                    <li id="uhome"><a href="javascript:topFunction()">Home</li></a>
+                    <li id="umenu"><a href="javascript:topFuncMenu()">Menu</li></a>
+                    <li id="udeal"><a href="javascript:topFuncDeals()">Deals</li></a>
+                    <li><a href="order.html">Order</li></a>
+                    <li id="ucontact"><a href="javascript:topFuncContact()">Contact Us</li></a>
+                    <li><a href="index.html">About Us</li></a>
+                    <li><a href="login.html">Login</li></a>
+                </ul>
+            </nav>
+    </header>
+
+    <body>
+        <button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+        <div class="parent" style="display: relative; top: 0; left: 0;">
+            <img src="hppic.png" id="hppic" alt="Banner">
+            <img src="pizzawheel.png" id="pizzawheel" alt="pizwheel">
+        </div>
+        <div class="complicated1">
+            <hr>
+            <h2 style="text-align: center; font-size: 45px;">
+                <span>Menu</span>
+            </h2>
+            <hr>
+        </div>
+        <div class="fmenu">
+            <div class="menu">
+                <div class="pizza">
+                    <img src="pizza.jpeg" alt="pizza" href="javascript:show()">
+                    <h2>Pizza</h2>
+                </div>
+                <div class="pasta">
+                    <img src="pasta.jpeg" alt="">
+                    <h2>Pasta</h2>
+                </div>
+                <div class="tacos">
+                    <img src="tacos.jpeg" alt="">
+                    <h2>Tacos</h2>
+                </div>
+                <div class="gbread">
+                    <img src="gbread.jpeg" alt="">
+                    <h2>Garlic Bread</h2>
+                </div>
+            </div>
+            <div class="mmenu">
+                <img src="menu1.jpeg" alt="menu1">
+                <img src="menu2.jpeg" alt="menu2">
+            </div>
+        </div>
+        <div class="complicated1">
+            <hr>
+            <h2 style="text-align: center; font-size: 45px;">
+                <span>Deals</span>
+            </h2>
+            <hr>
+        </div>
+        <div class="deals">
+            <img src="deal1.jpeg" alt="">
+            <img src="deals2.jpeg" alt="">
+            <img src="deals3.jpeg" alt="">
+            <img src="deals4.jpeg" alt="">
+        </div>
+        <div class="complicated2">
+            <hr>
+            <h2 style="text-align: center; font-size: 45px;">
+                <span>Contact Us</span>
+            </h2>
+            <hr>
+        </div>
+        <div class="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3037253942675!2d76.85337987570604!3d29.97070012206062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e473d9a5965a9%3A0xc1ea4dfb0cf5b9f1!2sPizza%20Galleria%20kurukshetra!5e0!3m2!1sen!2sin!4v1685344303796!5m2!1sen!2sin" width="700" height="530" style="border:0; margin-left: 10px; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="form">
+                <form action="" name="myform"  onsubmit="return validate()">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <br>
+                    <input type="email" id="email" placeholder="Your Email ID">
+                    <br>
+                    <input type="text" id="number" placeholder="Your Number" name="num">
+                    <br>
+                    <textarea name="message" id="message" cols="55" rows="10" placeholder="Enter your message here..."></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Your company description goes here.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Front of NIT KKR Main Gate</p>
+                <p>Phone: 8950973575</p>
+                <p>Email: nothing@gmail.com</p>
+            </div>
+            <div class="footer-section social">
+                <h3 style="margin-bottom: 0px;">Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/pizzagalleria/"><img src="fblogo.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/pizzagalleria/?hl=en"><img src="iglogo.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size: large;">All Rights Reserved. &copy; Pizza Galleria</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

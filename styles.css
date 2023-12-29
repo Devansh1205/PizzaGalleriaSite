@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(241, 71, 71);
+    color: white;
+    font-size: x-large;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+
+#hppic {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    width: 100vw;
+    object-fit: fit-content;
+}
+
+#pizzawheel{
+    filter: brightness(1.20);
+    height: 400px;
+    position: absolute;
+    left: 830px;
+    top: 232px;
+}
+
+li :hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-scroll {
+    background-color: rgb(166, 20, 20);
+}
+
+.navbar-scroll-menu {
+    background-color: #272627;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 40px;
+}
+
+.mmenu{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.mmenu img{
+    height: 1000px;
+}
+
+.fmenu{
+    background-color: #272627;
+}
+
+.menu img {
+    transform: scale(0.92);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.pizza,
+.pasta,
+.tacos,
+.gbread{
+    /* box-sizing: border-box;
+    border: 6px solid rgb(224, 50, 50); */
+    border-radius: 10px;
+    color: rgb(175, 174, 174);
+}
+
+.pizza img{
+    height: 200px;
+}
+
+.menu img:hover {
+    transform: scale(1);
+    filter: brightness(1.15);
+}
+
+.menu h2 {
+    text-align: center;
+}
+
+.complicated1, .complicated2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.complicated1 hr {
+    margin-top: 30px;
+    width: 45vw;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+}
+
+.complicated2 hr {
+    margin-top: 30px;
+    width: 41vw;
+    height: 1px;
+    background-color: black;
+}
+
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.contact {
+    padding: 15px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.form{
+    padding: 30px;
+    width: 500px;
+    font-size: 50px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: rgb(243, 57, 57);
+}
+
+input[type="text"], input[type="email"], textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+::placeholder{
+    color: rgb(224, 222, 222);
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"]
+{
+    font-size:20px;
+}
+
+textarea::placeholder{
+    color: black;
+}
+
+input[type="submit"]{
+    color: black;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+input{
+    background-color: rgb(243, 57, 57);
+    color: white;
+    padding: 6px;
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+textarea{
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+    resize: none;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #e44242;
+    padding: 80px 20px 0px 20px;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: rgb(236, 236, 236);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: rgb(255, 255, 255);
+}
+
+.footer-section.social ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-section.social i {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-section.social i:hover {
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgb(252, 252, 252);
+    font-size: 14px;
+}
+
+.social img:hover {
+    transform: scale(1.10);
+}
+
+.footer-content img {
+    height: 20px;
+    width: 20px;
+}
